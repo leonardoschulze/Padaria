@@ -1,0 +1,12 @@
+.row-produtos{
+    text-align: center;
+    width: 1260px;
+    border: 9px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.imagem{
+    width: 100px;
+    height: auto;
+}
