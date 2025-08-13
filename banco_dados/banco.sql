@@ -46,14 +46,14 @@ INSERT INTO clientes(id, nome, email) VALUES (NULL, 'Maria', 'maria@gmail.com');
 
 INSERT INTO produtos(id, nome, quantidade_estoque)
 VALUES 
-(NULL,'Pão','93')
-(NULL,'Pão de queijo','34')
-(NULL,'Pastel','17')
-(NULL,'Cuca','12')
-(NULL,'Bolo','20')
-(NULL,'Sonho','45')
-(NULL,'Empada','29')
-(NULL,'Café','83')
-(NULL,'Rosca','19')
+(NULL,'Pão','93'),
+(NULL,'Pão de queijo','34'),
+(NULL,'Pastel','17'),
+(NULL,'Cuca','12'),
+(NULL,'Bolo','20'),
+(NULL,'Sonho','45'),
+(NULL,'Empada','29'),
+(NULL,'Café','83'),
+(NULL,'Rosca','19'),
 (NULL,'Bolinho de Carne','24')
  
