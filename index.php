@@ -4,15 +4,38 @@
 <head>
   <title>Padaria Pão e Confia</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="header">
-    <h1 class="title">Bem vindo à padaria Pão e Confia </h1>
-    <h5 class="subtitle">Uma padaria feita para te fazer feliz, faça a sua compra</h5>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+     <a class="navbar-brand" href="#">Padaria Pão e Confia
+        <i class="fas fa-coffee me-2"> </i>
+</a > 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfólio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
 
   <div class="produtos">
     <div class="row">

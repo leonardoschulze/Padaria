@@ -1,13 +1,34 @@
-.header{
-    background-color: #52070F;
-    color: white;
-    height: 120px;
-}
 
 .title{
     margin-bottom: 20px;
     text-align: center;
     
+}
+
+.navbar-custom {
+    background-color: #52070F !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    margin: 0 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-brand {
+    color: #FFFFFF !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 .row{
