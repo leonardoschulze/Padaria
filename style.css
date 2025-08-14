@@ -1,12 +1,62 @@
-.row-produtos{
+.header{
+    background-color: #52070F;
+    color: white;
+    height: 120px;
+}
+
+.title{
+    margin-bottom: 20px;
     text-align: center;
-    width: 1260px;
-    border: 9px;
-    border-radius: 15px;
+    
+}
+
+.row{
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    text-align: center;
+    margin: 50px;
+    height: 325px;
+}
+
+.card-img-top{
+    height: 192px;
+}
+
+.preco{
+    color: #27B43D;
+    font-weight: bold;
+}
+
+.comprar{
+    background-color: #27B43D;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+.subtitle{
+    margin: 20px;
+    text-align: center;
 }
 
 .imagem{
-    width: 100px;
+    height: 100px;
     height: auto;
 }
+
+.pao{
+    height: 200px;
+    width: auto;
+    margin: 20px;
+}
+

@@ -1,76 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Padaria Pão e Confia</title>
+  <title>Padaria Pão e Confia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-<?php
-  echo "<h1>Bem-vindo à Pão e Confia!</h1>";
-  echo "<p>Padaria Feita para te fazer feliz, faça a sua compra</p>";
-?>
-  <section>
-    <div class="row-produtos">
-        <div class="produtos">
-          <h1>Pão</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
+
+  <div class="header">
+    <h1 class="title">Bem vindo à padaria Pão e Confia </h1>
+    <h5 class="subtitle">Uma padaria feita para te fazer feliz, faça a sua compra</h5>
+  </div>
+
+  <div class="produtos">
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/pao-frances-12h-gg.png.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pão</h5>
+          <h5 class="preco"> R$ 2,00 R$ </h5>
+          <button class="comprar">COMPRAR</button>
         </div>
-        <div class="produtos">
-          <h1>Pão Queijo</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/paoqueijo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pão de queijo</h5>
+          <h5 class="preco"> R$ 2,50 R$ </h5>
+          <button class="comprar">COMPRAR</button>
         </div>
-        <div class="produtos">
-          <h1>Pastel</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/pastel.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pastel</h5>
+          <h5 class="preco"> R$ 4,00 R$ </h5>
+          <button class="comprar">COMPRAR</button>
         </div>
-        <div class="produtos">
-          <h1>Cuca</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/cuca.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cuca</h5>
+          <h5 class="preco"> R$ 15,00 R$ </h5>
+          <button class="comprar">COMPRAR</button>
         </div>
-        <div class="produtos">
-          <h1>Bolo</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
-        </div>
-        <div class="produtos">
-          <h1>Sonho</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
-        </div>
-        <div class="produtos">
-          <h1>Empada</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
-        </div>
-        <div class="produtos">
-          <h1>Café</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
-        </div>
-        <div class="produtos">
-          <h1>Rosca</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
-        </div>
-        <div class="produtos">
-          <h1>Bolinho de Carne</h1>
-          <button class="menu-btn">
-                <a href=""><i class=""></i></a>
-            </button>
-        </div>
+      </div>
     </div>
-  </section>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/bolo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bolo</h5>
+          <h5 class="preco"> R$ 10,00 R$ </h5>
+          <button class="comprar">COMPRAR</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/sonho.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sonho</h5>
+          <h5 class="preco"> R$ 3,00 R$ </h5>
+          <button class="comprar">COMPRAR</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/empada.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Empada</h5>
+          <h5 class="preco"> R$ 3,50 R$ </h5>
+          <button class="comprar">COMPRAR</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/cafe.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Café</h5>
+          <h5 class="preco"> R$ 4,50 R$ </h5>
+          <button class="comprar">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+     <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/rosca.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rosca</h5>
+          <h5 class="preco"> R$ 8,00 R$ </h5>
+          <button class="comprar">COMPRAR</button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../Padaria/imagem/bolinhocarne.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bolinho de carne</h5>
+          <h5 class="preco"> R$ 3,00 R$ </h5>
+          <button class="comprar">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </body>
+
 </html>
