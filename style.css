@@ -81,3 +81,40 @@
     margin: 20px;
 }
 
+.row-produtos{
+    text-align: center;
+    width: 1260px;
+    border: 9px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.imagem{
+    width: 100px;
+    height: auto;
+}
+
+#video_sobre{
+    width:100%;
+}
+
+#sobre_nos{
+    display: flex;
+    padding-top: 90px;
+    text-align: center;
+}
+
+#texto_sobre{
+    width: 1500px;
+    padding-left:200px;
+    padding-top: 130px;
+    text-align: justify;
+}
+
+#imagem_sobre{
+    width: 1200px;
+}
+
+#MVV{
+
+}
