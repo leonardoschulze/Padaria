@@ -21,16 +21,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Início</a>
+          <a class="nav-link active" aria-current="page" href="home.php">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Serviços</a>
+          <a class="nav-link" href="sobrenos.php">Sobre nós</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfólio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
+          <a class="nav-link" href="carrinho.php">Carrinho</a>
         </li>
       </ul>
     </div>
@@ -43,7 +40,7 @@
         <img src="../Padaria/imagem/pao-frances-12h-gg.png.webp" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Pão</h5>
-          <h5 class="preco"> R$ 2,00 R$ </h5>
+          <h5 class="preco"> R$ 0,50 R$ </h5>
           <button class="comprar">COMPRAR</button>
         </div>
       </div>
@@ -125,9 +122,6 @@
       </div>
     </div>
   </div>
-
-
-
 
 </body>
 
