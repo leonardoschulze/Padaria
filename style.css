@@ -99,22 +99,63 @@
 }
 
 #sobre_nos{
-    display: flex;
+
     padding-top: 90px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #texto_sobre{
-    width: 1500px;
-    padding-left:200px;
-    padding-top: 130px;
-    text-align: justify;
+    margin-top: 30px;
+    width: 800px;
+    margin-left: 20%;
+    text-align: center;
+    padding-top: 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+#texto_sobre:hover{
+    transform: scale(1.025);
+    transition: 0.3s;
 }
 
 #imagem_sobre{
-    width: 1200px;
+
 }
 
-#MVV{
+.imagem_sobre{
+   margin-left: 200px;
+   padding-bottom: 200px;
+}
 
+#titulo-sobre{
+    background-color: #52070F;
+    text-align: center;
+    width: 800px;
+    height: 50px;
+    color: white;
+    margin-left: 20%;
+    border-radius: 20px;
+    
+}
+
+.elementos{
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fixarRodape{
+    background-color: #52070F;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }

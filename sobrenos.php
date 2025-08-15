@@ -37,8 +37,11 @@
     <section>
         <video id="video_sobre" src="imagem/ESCOLHA SUA ROUPA (4).mp4"></video>
         <div id="sobre_nos">
-            <div id="texto_sobre">
+            <div class="elementos">
+            <div id="titulo-sobre">
                 <h1>Sobre Nós</h1>
+            </div>
+            <div id="texto_sobre">
                 <p>Aqui, cada detalhe importa.
             Do modo como dobramos um guardanapo ao sorriso com que recebemos cada cliente, tudo é pensado para criar uma experiência que aquece o coração. Acreditamos que o pão vai muito além do alimento — ele é partilha, é memória, é aquele abraço que a gente sente no primeiro pedaço.
 
@@ -54,9 +57,8 @@
             Nosso maior orgulho? Fazer parte do seu dia.
             Seja na mesa do café da manhã, no lanche da tarde ou naquele pãozinho guardado pra quem chega do trabalho. Fazer parte desses momentos é o que nos move, todos os dias.</p>
             </div>
-            <div id="imagem_sobre">
-                <img src="imagem/sobre_sobre_nos.png" alt="">
-            </div>
+</div>
+                <img class="imagem_sobre" src="imagem/sobre_sobre_nos.png" alt="">
       </div>
 
         <div id="MVV">
@@ -65,5 +67,11 @@
             <div id="valores"></div>
         </div>
     </section>
+
+    <footer class="fixarRodape">
+
+    </footer>
+
+
 </body>
 </html>

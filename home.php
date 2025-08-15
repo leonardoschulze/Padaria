@@ -123,6 +123,10 @@
     </div>
   </div>
 
+      <footer class="fixarRodape">
+
+    </footer>
+
 </body>
 
 </html>
