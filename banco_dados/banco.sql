@@ -34,6 +34,24 @@ CREATE TABLE produtos (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE carrinho (
+    cod_compra INT(8) NOT NULL,
+    cod_produto int(8) NOT NULL,
+    unidades_vendidas INT(8) NOT NULL,
+    data_insercao date NOT NULL,
+    hora_insercao time NOT NULL
+);
+
+CREATE TABLE compras (
+    cod_compra INT(8) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    cod_cliente INT(8) NOT NULL,
+    forma_pgto VARCHAR(15) NOT NULL,
+    parcelamento INT(2) NOT NULL,
+    valor_liquido VARCHAR(10) NOT NULL,
+    valor_final VARCHAR(10) NOT NULL,
+    status VARCHAR(10) NOT NULL
+);
+
 -- Insert do usuário
 
 INSERT INTO usuarios(id, nome, email) VALUES (NULL, 'João', 'joao@gmail.com');

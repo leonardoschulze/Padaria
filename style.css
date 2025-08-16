@@ -1,8 +1,7 @@
-
-.title{
+.title {
     margin-bottom: 20px;
     text-align: center;
-    
+
 }
 
 .navbar-custom {
@@ -31,57 +30,65 @@
     transition: all 0.3s ease;
 }
 
-.row{
+.row {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.card{
+.card {
     text-align: center;
+    align-items: center;
+    justify-content: center;
     margin: 50px;
-    height: 325px;
+    height: 380px;
 }
 
-.card-img-top{
+.input-group.mb-3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top {
     height: 192px;
 }
 
-.preco{
+.preco {
     color: #27B43D;
     font-weight: bold;
 }
 
-.comprar{
+.comprar {
     background-color: #27B43D;
     color: white;
     font-weight: bold;
-    border-radius: 10px;
     width: 120px;
     height: 35px;
-    margin: 0px;
+    margin-top: 10px;
     border: 0px;
     padding: 0px;
 }
 
-.subtitle{
+
+.subtitle {
     margin: 20px;
     text-align: center;
 }
 
-.imagem{
+.imagem {
     height: 100px;
     height: auto;
 }
 
-.pao{
+.pao {
     height: 200px;
     width: auto;
     margin: 20px;
 }
 
-.row-produtos{
+.row-produtos {
     text-align: center;
     width: 1260px;
     border: 9px;
@@ -89,16 +96,16 @@
     display: flex;
 }
 
-.imagem{
+.imagem {
     width: 100px;
     height: auto;
 }
 
-#video_sobre{
-    width:100%;
+#video_sobre {
+    width: 100%;
 }
 
-#sobre_nos{
+#sobre_nos {
 
     padding-top: 90px;
     text-align: center;
@@ -107,7 +114,7 @@
     display: flex;
 }
 
-#texto_sobre{
+#texto_sobre {
     margin-top: 30px;
     width: 800px;
     margin-left: 20%;
@@ -117,21 +124,17 @@
     border-radius: 20px;
 }
 
-#texto_sobre:hover{
+#texto_sobre:hover {
     transform: scale(1.025);
     transition: 0.3s;
 }
 
-#imagem_sobre{
-
+.imagem_sobre {
+    margin-left: 200px;
+    padding-bottom: 200px;
 }
 
-.imagem_sobre{
-   margin-left: 200px;
-   padding-bottom: 200px;
-}
-
-#titulo-sobre{
+#titulo-sobre {
     background-color: #52070F;
     text-align: center;
     width: 800px;
@@ -139,17 +142,17 @@
     color: white;
     margin-left: 20%;
     border-radius: 20px;
-    
+
 }
 
-.elementos{
+.elementos {
     margin-bottom: 150px;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.fixarRodape{
+.fixarRodape {
     background-color: #52070F;
     height: 100px;
     margin: 0px;
@@ -158,4 +161,17 @@
     bottom: 0;
     text-align: center;
     width: 100%;
+}
+
+.quantidade-produtos {
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.input-group {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
