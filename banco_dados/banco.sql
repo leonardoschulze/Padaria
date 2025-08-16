@@ -31,7 +31,8 @@ CREATE TABLE produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     quantidade_estoque INT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    preco DECIMAL(10, 2) NOT NULL
 );
 
 CREATE TABLE carrinho (
@@ -62,16 +63,16 @@ INSERT INTO clientes(id, nome, email) VALUES (NULL, 'Maria', 'maria@gmail.com');
 
 -- Insert dos produtos
 
-INSERT INTO produtos(id, nome, quantidade_estoque)
+INSERT INTO produtos(id, nome, quantidade_estoque, preco)
 VALUES 
-(NULL,'Pão','93'),
-(NULL,'Pão de queijo','34'),
-(NULL,'Pastel','17'),
-(NULL,'Cuca','12'),
-(NULL,'Bolo','20'),
-(NULL,'Sonho','45'),
-(NULL,'Empada','29'),
-(NULL,'Café','83'),
-(NULL,'Rosca','19'),
-(NULL,'Bolinho de Carne','24')
+(NULL,'Pão','93', '0.50'),
+(NULL,'Pão de queijo','34', '2.50'),
+(NULL,'Pastel','17', '4.00'),
+(NULL,'Cuca','12','15.00' ),
+(NULL,'Bolo','20', '10.00'),
+(NULL,'Sonho','45', '3.00'),
+(NULL,'Empada','29', '3.50'),
+(NULL,'Café','83', '4.50'),
+(NULL,'Rosca','19', '8.00'),
+(NULL,'Bolinho de Carne','24', '3.00')
  

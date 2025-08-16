@@ -1,6 +1,8 @@
 <?php
 session_start();
-require 'db.php';
+
+include 'db.php';
+
 
 $sql = "SELECT * FROM produtos";
 $result = $conn->query($sql);
@@ -38,7 +40,7 @@ $conn->close();
           <a class="nav-link active" href="home.php">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="sobrenos.php">Sobre nós</a>
+          <a class="nav-link" href="limpar_carrinho.php">Sobre nós</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="carrinho.php">Carrinho (<?php echo isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0 ?>)</a>
@@ -57,7 +59,7 @@ $conn->close();
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">Pão</h5>
           <h5 class="preco">R$ 0,50</h5>
-          <form method="post" action="adicionar_carrinho.php" class="mt-auto">
+          <form method="post" action="adicionar_carrinho.php">
             <input type="hidden" name="produto_id" value="1">
             <input type="hidden" name="produto_nome" value="Pão">
             <input type="hidden" name="produto_preco" value="0.50">
@@ -95,7 +97,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 3: Pastel -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
         <img src="../Padaria/imagem/pastel.avif" class="card-img-top" alt="...">
@@ -118,7 +119,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 4: Cuca -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
         <img src="../Padaria/imagem/cuca.jpg" class="card-img-top" alt="...">
@@ -141,7 +141,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 5: Bolo -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
         <img src="../Padaria/imagem/bolo.jpg" class="card-img-top" alt="...">
@@ -164,7 +163,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 6: Sonho -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
         <img src="../Padaria/imagem/sonho.jpg" class="card-img-top" alt="...">
@@ -187,7 +185,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 7: Empada -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
         <img src="../Padaria/imagem/empada.jpg" class="card-img-top" alt="...">
@@ -210,7 +207,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 8: Café -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
          <img src="../Padaria/imagem/cafe.avif" class="card-img-top" alt="...">
@@ -233,7 +229,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 9: Rosca -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
          <img src="../Padaria/imagem/rosca.jpg" class="card-img-top" alt="...">
@@ -256,7 +251,6 @@ $conn->close();
       </div>
     </div>
 
-    <!-- Produto 10: Bolinho de Carne -->
     <div class="col-md-3 mb-4">
       <div class="card" style="width: 18rem;">
          <img src="../Padaria/imagem/bolinhocarne.jpg" class="card-img-top" alt="...">
