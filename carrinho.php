@@ -91,13 +91,17 @@ session_start();
           </td>
           <td>R$ <?= number_format($item['preco'], 2, ',', '.') ?></td>
           <td>
-            <form method="post" action="atualizar_carrinho.php" class="d-inline">
-              <input type="hidden" name="index" value="<?= $index ?>">
-              <div class="input-group input-group-quantidade">
-                <input type="number" name="quantidade" value="<?= $item['quantidade'] ?>" min="1" class="form-control">
-                <button type="submit" class="btn btn-outline-primary">Atualizar</button>
-              </div>
-            </form>
+          <form method="post" action="atualizar_carrinho.php" class="d-inline-flex">
+            <input type="hidden" name="index" value="<?= $index ?>">
+            <input type="number" name="quantidade" 
+                  value="<?= $item['quantidade'] ?>" 
+                  min="1" 
+                  class="form-control form-control-sm" 
+                  style="width: 70px;">
+            <button type="submit" class="btn btn-sm btn-outline-primary ms-2">
+              <i class="fas fa-sync-alt"></i> Atualizar
+            </button>
+          </form>
           </td>
           <td>R$ <?= number_format($subtotal, 2, ',', '.') ?></td>
           <td>
@@ -124,6 +128,9 @@ session_start();
   <?php endif; ?>
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+
 </html>

@@ -2,28 +2,9 @@
 
 CREATE DATABASE padaria;
 
-
 -- Usar o banco de dados
 
 USE padaria;
-
--- Criar a tabela de usuários (funcionário da padaria)
-
-CREATE TABLE usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- Criar tabela de clientes 
-
-CREATE TABLE clientes (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 
 -- Criar tabela de produtos da padaria
 
@@ -35,31 +16,24 @@ CREATE TABLE produtos (
     preco DECIMAL(10, 2) NOT NULL
 );
 
-CREATE TABLE carrinho (
-    cod_compra INT(8) NOT NULL,
-    cod_produto int(8) NOT NULL,
-    unidades_vendidas INT(8) NOT NULL,
-    data_insercao date NOT NULL,
-    hora_insercao time NOT NULL
+-- Tabela de vendas
+CREATE TABLE vendas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data_venda DATETIME DEFAULT CURRENT_TIMESTAMP,
+    total DECIMAL(10,2) NOT NULL,
+    status VARCHAR(20) DEFAULT 'finalizada'
 );
 
-CREATE TABLE compras (
-    cod_compra INT(8) PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    cod_cliente INT(8) NOT NULL,
-    forma_pgto VARCHAR(15) NOT NULL,
-    parcelamento INT(2) NOT NULL,
-    valor_liquido VARCHAR(10) NOT NULL,
-    valor_final VARCHAR(10) NOT NULL,
-    status VARCHAR(10) NOT NULL
+-- Tabela de itens_vendidos
+CREATE TABLE itens_vendidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    venda_id INT NOT NULL,
+    produto_id INT NOT NULL,
+    quantidade INT NOT NULL,
+    preco_unitario DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (venda_id) REFERENCES vendas(id),
+    FOREIGN KEY (produto_id) REFERENCES produtos(id)
 );
-
--- Insert do usuário
-
-INSERT INTO usuarios(id, nome, email) VALUES (NULL, 'João', 'joao@gmail.com');
-
--- Insert do cliente
-
-INSERT INTO clientes(id, nome, email) VALUES (NULL, 'Maria', 'maria@gmail.com');
 
 -- Insert dos produtos
 
