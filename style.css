@@ -19,7 +19,6 @@
     padding: 8px 15px;
     margin: 0 5px;
     position: relative;
-    transition: all 0.3s ease;
 }
 
 .navbar-custom .navbar-brand {
@@ -175,3 +174,4 @@
     align-items: center;
     justify-content: center;
 }
+

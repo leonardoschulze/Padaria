@@ -40,7 +40,7 @@ $conn->close();
           <a class="nav-link active" href="home.php">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="limpar_carrinho.php">Sobre nós</a>
+          <a class="nav-link" href="sobrenos.php">Sobre nós</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="carrinho.php">Carrinho (<?php echo isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0 ?>)</a>
